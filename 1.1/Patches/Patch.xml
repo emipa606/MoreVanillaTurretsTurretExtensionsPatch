@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>*/ThingDef[defName="GunComplex" or defName="RocketComplex"]</xpath>
+    <value>
+      <li Class="TurretExtensions.TurretFrameworkExtension">
+        <useManningPawnShootingAccuracy>true</useManningPawnShootingAccuracy>
+        <useManningPawnAimingDelayFactor>true</useManningPawnAimingDelayFactor>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="GunComplex" or defName="RocketComplex"]/comps</xpath>
+    <value>
+      <li Class="TurretExtensions.CompProperties_SmartForcedTarget" />
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="MilitaryTurretGun" or defName="MilitaryTurretGunManned" or defName="ShredderTurretGun" or defName="ShredderTurretGunManned" or defName="PrecisionTurretGun" or defName="PrecisionTurretGunManned" or defName="VulcanCannon" or defName="VulcanCannonManned"]/statBases</xpath>
+    <value>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </value>
+  </Operation>
+  <!-- ===== Upgrades ===== -->
+  <!-- Gun Complex -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="GunComplex"]/comps</xpath>
+    <value>
+      <li Class="TurretExtensions.CompProperties_Upgradable">
+        <!-- Basics -->
+        <description>Increase the gun complex's fire rate and overall durability.</description>
+        <!-- Costs -->
+        <costStuffCount>140</costStuffCount>
+        <costList>
+          <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <researchPrerequisites>
+          <li>GunComplex</li>
+        </researchPrerequisites>
+        <workToUpgrade>3000</workToUpgrade>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <!-- Results -->
+        <statFactors>
+          <MaxHitPoints>1.5</MaxHitPoints>
+        </statFactors>
+        <fuelCapacityFactor>1.5</fuelCapacityFactor>
+        <fuelMultiplierFactor>1.5</fuelMultiplierFactor>
+        <turretBurstCooldownTimeFactor>0.75</turretBurstCooldownTimeFactor>
+      </li>
+    </value>
+  </Operation>
+  <!-- Rocket Complex -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="RocketComplex"]/comps</xpath>
+    <value>
+      <li Class="TurretExtensions.CompProperties_Upgradable">
+        <!-- Basics -->
+        <description>Increase the rocket complex's fire rate and overall durability.</description>
+        <!-- Costs -->
+        <costStuffCount>140</costStuffCount>
+        <costList>
+          <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+        <researchPrerequisites>
+          <li>RocketComplex</li>
+        </researchPrerequisites>
+        <workToUpgrade>3000</workToUpgrade>
+        <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+        <!-- Results -->
+        <statFactors>
+          <MaxHitPoints>1.5</MaxHitPoints>
+        </statFactors>
+        <fuelCapacityFactor>1.5</fuelCapacityFactor>
+        <fuelMultiplierFactor>1.5</fuelMultiplierFactor>
+        <turretBurstCooldownTimeFactor>0.75</turretBurstCooldownTimeFactor>
+      </li>
+    </value>
+  </Operation>
+  <!-- Military Grade Turret -->
+  <!-- automatic -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="MilitaryTurretGun"]/comps</xpath>
+    <value>
+      <li Class="TurretExtensions.CompProperties_Upgradable">
+        <!-- Basics -->
+        <description>Increase the military grade turret's barrel durability and overall accuracy. Also makes it manually controllable by you.</description>
+        <!-- Costs -->
+        <costStuffCount>100</costStuffCount>
+        <costList>
+          <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <researchPrerequisites>
+          <li>MilitaryTurret</li>
+        </researchPrerequisites>
+        <workToUpgrade>4000</workToUpgrade>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <!-- Results -->
+        <statOffsets>
+          <ShootingAccuracyTurret>0.01</ShootingAccuracyTurret>
+        </statOffsets>
+        <statFactors>
+          <MaxHitPoints>1.5</MaxHitPoints>
+        </statFactors>
+        <basePowerConsumptionFactor>1.5</basePowerConsumptionFactor>
+        <fuelCapacityFactor>1.25</fuelCapacityFactor>
+        <fuelMultiplierFactor>1.25</fuelMultiplierFactor>
+        <canForceAttack>true</canForceAttack>
+      </li>
+    </value>
+  </Operation>
+  <!-- manned -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="MilitaryTurretGunManned"]/comps</xpath>
+    <value>
+      <li Class="TurretExtensions.CompProperties_Upgradable">
+        <!-- Basics -->
+        <description>Increase the military grade turret's barrel durability and overall accuracy.</description>
+        <!-- Costs -->
+        <costStuffCount>70</costStuffCount>
+        <costList>
+          <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <researchPrerequisites>
+          <li>MilitaryTurret</li>
+        </researchPrerequisites>
+        <workToUpgrade>3000</workToUpgrade>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <!-- Results -->
+        <statOffsets>
+          <ShootingAccuracyTurret>0.01</ShootingAccuracyTurret>
+        </statOffsets>
+        <basePowerConsumptionFactor>1.5</basePowerConsumptionFactor>
+        <fuelCapacityFactor>1.25</fuelCapacityFactor>
+        <fuelMultiplierFactor>1.25</fuelMultiplierFactor>
+      </li>
+    </value>
+  </Operation>
+  <!-- Shredder Turret -->
+  <!-- automatic -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="ShredderTurretGun"]/comps</xpath>
+    <value>
+      <li Class="TurretExtensions.CompProperties_Upgradable">
+        <!-- Basics -->
+        <description>Increase the shredder turret's damage and overall rate of fire.</description>
+        <!-- Costs -->
+        <costStuffCount>80</costStuffCount>
+        <costList>
+          <Plasteel>30</Plasteel>
+          <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <researchPrerequisites>
+          <li>ShredderTurret</li>
+        </researchPrerequisites>
+        <workToUpgrade>4000</workToUpgrade>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <!-- Results -->
+        <turretGunDef>Gun_TurretShredderUpgraded</turretGunDef>
+        <basePowerConsumptionFactor>1.5</basePowerConsumptionFactor>
+        <turretBurstCooldownTimeFactor>0.9</turretBurstCooldownTimeFactor>
+      </li>
+    </value>
+  </Operation>
+  <!-- manned -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="ShredderTurretGunManned"]/comps</xpath>
+    <value>
+      <li Class="TurretExtensions.CompProperties_Upgradable">
+        <!-- Basics -->
+        <description>Increase the shredder turret's damage and overall rate of fire.</description>
+        <!-- Costs -->
+        <costStuffCount>60</costStuffCount>
+        <costList>
+          <Plasteel>20</Plasteel>
+          <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <researchPrerequisites>
+          <li>ShredderTurret</li>
+        </researchPrerequisites>
+        <workToUpgrade>4000</workToUpgrade>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <!-- Results -->
+        <turretGunDef>Gun_TurretShredderMannedUpgraded</turretGunDef>
+        <basePowerConsumptionFactor>1.5</basePowerConsumptionFactor>
+        <turretBurstCooldownTimeFactor>0.9</turretBurstCooldownTimeFactor>
+      </li>
+    </value>
+  </Operation>
+  <!-- Precision Turret -->
+  <!-- automatic -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="PrecisionTurretGun"]/comps</xpath>
+    <value>
+      <li Class="TurretExtensions.CompProperties_Upgradable">
+        <!-- Basics -->
+        <description>Massively increase the precision turret's overall accuracy, somewhat increase barrel durability but decrease the rate of fire. Also makes it directly controllable by you.</description>
+        <!-- Costs -->
+        <costStuffCount>130</costStuffCount>
+        <costList>
+          <Plasteel>20</Plasteel>
+          <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <researchPrerequisites>
+          <li>PrecisionTurret</li>
+        </researchPrerequisites>
+        <workToUpgrade>4000</workToUpgrade>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <!-- Results -->
+        <statOffsets>
+          <ShootingAccuracyTurret>0.03</ShootingAccuracyTurret>
+        </statOffsets>
+        <basePowerConsumptionFactor>2</basePowerConsumptionFactor>
+        <fuelCapacityFactor>1.2</fuelCapacityFactor>
+        <fuelMultiplierFactor>1.2</fuelMultiplierFactor>
+        <turretBurstCooldownTimeFactor>2</turretBurstCooldownTimeFactor>
+        <canForceAttack>true</canForceAttack>
+      </li>
+    </value>
+  </Operation>
+  <!-- manned -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="PrecisionTurretGunManned"]/comps</xpath>
+    <value>
+      <li Class="TurretExtensions.CompProperties_Upgradable">
+        <!-- Basics -->
+        <description>Massively increase the precision turret's overall accuracy, somewhat increase barrel durability but significantly decrease the rate of fire.</description>
+        <!-- Costs -->
+        <costStuffCount>100</costStuffCount>
+        <costList>
+          <Plasteel>12</Plasteel>
+          <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <researchPrerequisites>
+          <li>PrecisionTurret</li>
+        </researchPrerequisites>
+        <workToUpgrade>4000</workToUpgrade>
+        <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+        <!-- Results -->
+        <statOffsets>
+          <ShootingAccuracyTurret>0.03</ShootingAccuracyTurret>
+        </statOffsets>
+        <basePowerConsumptionFactor>2</basePowerConsumptionFactor>
+        <fuelCapacityFactor>1.2</fuelCapacityFactor>
+        <fuelMultiplierFactor>1.2</fuelMultiplierFactor>
+        <turretBurstCooldownTimeFactor>2</turretBurstCooldownTimeFactor>
+      </li>
+    </value>
+  </Operation>
+  <!-- Blast Turret -->
+  <!-- automatic -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="BlastTurretGun"]/comps</xpath>
+    <value>
+      <li Class="TurretExtensions.CompProperties_Upgradable">
+        <!-- Basics -->
+        <description>Double the amount of grenades that the blast turret fires and slightly reduce the delay between grenades being fired, double the overall durability and increase the overall area coverage. Significantly decreases the overall fire rate though.</description>
+        <upgradedTurretDescription>Blast turret is designed for close range area damage, but has been modified to be better suited for larger areas, and it does so by launching a burst of 6 frag grenades instead of 3. Explodes in a radius of 3 when destroyed.</upgradedTurretDescription>
+        <!-- Costs -->
+        <costStuffCount>180</costStuffCount>
+        <costList>
+          <ComponentIndustrial>6</ComponentIndustrial>
+        </costList>
+        <researchPrerequisites>
+          <li>BlastTurret</li>
+        </researchPrerequisites>
+        <workToUpgrade>4000</workToUpgrade>
+        <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+        <!-- Results -->
+        <statFactors>
+          <MaxHitPoints>2</MaxHitPoints>
+        </statFactors>
+        <turretGunDef>Gun_BlastChargeUpgraded</turretGunDef>
+        <fuelCapacityFactor>2</fuelCapacityFactor>
+        <fuelMultiplierFactor>2</fuelMultiplierFactor>
+        <basePowerConsumptionFactor>1.5</basePowerConsumptionFactor>
+        <turretBurstCooldownTimeFactor>1.5</turretBurstCooldownTimeFactor>
+      </li>
+    </value>
+  </Operation>
+  <!-- manned -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="BlastTurretGunManned"]/comps</xpath>
+    <value>
+      <li Class="TurretExtensions.CompProperties_Upgradable">
+        <!-- Basics -->
+        <description>Double the amount of grenades that the blast turret fires and slightly reduce the delay between grenades being fired, double the overall durability and increase the overall area coverage. Significantly decreases the overall fire rate though.</description>
+        <upgradedTurretDescription>Blast turret is designed for close range area damage, but has been modified to be better suited for larger areas, and it does so by launching a burst of 10 frag grenades instead of 5. Explodes in a radius of 3 when destroyed. This manned design is cheaper at the cost of needing an operator.</upgradedTurretDescription>
+        <!-- Costs -->
+        <costStuffCount>135</costStuffCount>
+        <costList>
+          <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <researchPrerequisites>
+          <li>BlastTurret</li>
+        </researchPrerequisites>
+        <workToUpgrade>4000</workToUpgrade>
+        <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+        <!-- Results -->
+        <statFactors>
+          <MaxHitPoints>2</MaxHitPoints>
+        </statFactors>
+        <turretGunDef>Gun_BlastChargeMannedUpgraded</turretGunDef>
+        <fuelCapacityFactor>2</fuelCapacityFactor>
+        <fuelMultiplierFactor>2</fuelMultiplierFactor>
+        <basePowerConsumptionFactor>1.5</basePowerConsumptionFactor>
+        <turretBurstCooldownTimeFactor>1.5</turretBurstCooldownTimeFactor>
+      </li>
+    </value>
+  </Operation>
+  <!-- Vulcan Cannon -->
+  <!-- automatic -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="VulcanCannon"]/comps</xpath>
+    <value>
+      <li Class="TurretExtensions.CompProperties_Upgradable">
+        <!-- Basics -->
+        <description>Double the amount of damage that the vulcan cannon does but slightly decrease its overall accuracy.</description>
+        <!-- Costs -->
+        <costStuffCount>300</costStuffCount>
+        <costList>
+          <Plasteel>80</Plasteel>
+          <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <researchPrerequisites>
+          <li>VulcanCannon</li>
+        </researchPrerequisites>
+        <workToUpgrade>8000</workToUpgrade>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <!-- Results -->
+        <statOffsets>
+          <ShootingAccuracyTurret>-0.005</ShootingAccuracyTurret>
+        </statOffsets>
+        <turretGunDef>Gun_VulcanCannonUpgraded</turretGunDef>
+        <basePowerConsumptionFactor>2</basePowerConsumptionFactor>
+      </li>
+    </value>
+  </Operation>
+  <!-- manned -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="VulcanCannonManned"]/comps</xpath>
+    <value>
+      <li Class="TurretExtensions.CompProperties_Upgradable">
+        <!-- Basics -->
+        <description>Double the amount of damage that the vulcan cannon does but slightly decrease its overall accuracy.</description>
+        <!-- Costs -->
+        <costStuffCount>200</costStuffCount>
+        <costList>
+          <Plasteel>60</Plasteel>
+          <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <researchPrerequisites>
+          <li>VulcanCannon</li>
+        </researchPrerequisites>
+        <workToUpgrade>8000</workToUpgrade>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <!-- Results -->
+        <statOffsets>
+          <ShootingAccuracyTurret>-0.005</ShootingAccuracyTurret>
+        </statOffsets>
+        <turretGunDef>Gun_VulcanCannonMannedUpgraded</turretGunDef>
+        <basePowerConsumptionFactor>2</basePowerConsumptionFactor>
+      </li>
+    </value>
+  </Operation>
+  <!-- Devastator Mortar -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThingDef[defName="Turret_DevastatorMortarBomb"]/comps</xpath>
+    <value>
+      <li Class="TurretExtensions.CompProperties_Upgradable">
+        <!-- Basics -->
+        <description>Increase the projectile velocity and damage of the devastator mortar. Also increases the shell count from 5 to 8, but reduces the accuracy.</description>
+        <!-- Costs -->
+        <costStuffCount>250</costStuffCount>
+        <costList>
+          <Plasteel>100</Plasteel>
+          <Uranium>30</Uranium>
+          <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <researchPrerequisites>
+          <li>DevastatorMortar</li>
+        </researchPrerequisites>
+        <workToUpgrade>12000</workToUpgrade>
+        <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+        <!-- Results -->
+        <turretGunDef>Artillery_DevastatorBombUpgraded</turretGunDef>
+      </li>
+    </value>
+  </Operation>
+</Patch>
