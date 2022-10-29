@@ -12,11 +12,10 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2034220378
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 
-Direct download from https://www.dropbox.com/s/0dh3441zwfaxb9u/MoreVanillaTurretsTEPatch.zip?dl=0]Dropbox.
 
 # **Compatibility**
 
-Requires https://steamcommunity.com/workshop/filedetails/?id=1496122245]**Turret Extensions** and https://steamcommunity.com/sharedfiles/filedetails/?id=1478936958]**More Vanilla Turrets**. Save-compatible.
+Requires https://steamcommunity.com/workshop/filedetails/?id=2810485459]**Turret Extensions** and https://steamcommunity.com/sharedfiles/filedetails/?id=2009766414]**More Vanilla Turrets**. Save-compatible.
 
 Incompatible with Combat Extended, but that mod has yet to be updated to Beta 19.
 
