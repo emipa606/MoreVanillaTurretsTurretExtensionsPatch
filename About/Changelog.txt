@@ -1,5 +1,8 @@
 # Changelog for MoreVanillaTurretsTurretExtensionsPatch
 
+1.5.0 - Updated to 1.5, added compatibility with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2583529720]Rah's Vanilla Turrets Expansion[/url]
+
+
 1.4.1 - Mod updated for 1.4 and passed autotests
 
 
