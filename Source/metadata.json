@@ -2,5 +2,16 @@
   "Continued": true,
   "CanAdd": "0",
   "CanRemove": "2",
-  "PreviewVersion": "1.5"
+  "PreviewVersion": "1.6",
+  "LastXmlCleaning": "2025-08-03T10:24:15.6326275+02:00",
+  "SocialImageSet": true,
+  "Patches": true,
+  "Defs": true,
+  "Assemblies": false,
+  "LinesOfCode": 0,
+  "LinesOfXML": 34211,
+  "SearchTags": [
+    " turrets",
+    " upgrades"
+  ]
 }

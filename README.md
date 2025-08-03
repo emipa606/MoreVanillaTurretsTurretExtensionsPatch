@@ -1,10 +1,19 @@
 # [More Vanilla Turrets - Turret Extensions Patch (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2810491359)
 
 ![Image](https://i.imgur.com/buuPQel.png)
+
 Update of XeoNovaDans mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1516356320
 and the 1.1 version by denty
 https://steamcommunity.com/sharedfiles/filedetails/?id=2034220378
+
+The mod is compatible with:
+
+
+- [More Vanilla Turrets](https://steamcommunity.com/workshop/filedetails/?id=2583529720)
+- [Rah's Vanilla Turrets Expansion](https://steamcommunity.com/workshop/filedetails/?id=2583529720)
+
+
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 	
@@ -12,7 +21,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2034220378
 
 # **Compatibility**
 
-Requires [https://steamcommunity.com/workshop/filedetails/?id=2810485459]**Turret Extensions**[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009766414](**More Vanilla Turrets**). Save-compatible.
+Requires [**Turret Extensions**](https://steamcommunity.com/workshop/filedetails/?id=2810485459) and [**More Vanilla Turrets**](https://steamcommunity.com/sharedfiles/filedetails/?id=2009766414). Save-compatible.
 
 Incompatible with Combat Extended, but that mod has yet to be updated to Beta 19.
 
@@ -55,14 +64,15 @@ As is standard with my mods: you may include this mod in a mod pack, and you may
 ![Image](https://i.imgur.com/PwoNOj4.png)
 
 
+
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using [https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] or the standalone [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404](Uploader) and command Ctrl+F12
+-  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use [https://github.com/RimSort/RimSort/releases/latest](RimSort) to sort your mods
+-  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
-
-[https://steamcommunity.com/sharedfiles/filedetails/changelog/2810491359]![Image]((https://img.shields.io/github/v/release/emipa606/MoreVanillaTurretsTurretExtensionsPatch?label=latest%20version&style=plastic&color=9f1111&labelColor=black))
+[![Image](https://img.shields.io/github/v/release/emipa606/MoreVanillaTurretsTurretExtensionsPatch?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2810491359) | tags:  turrets,  upgrades
