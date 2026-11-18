@@ -1,6 +1,6 @@
 # [More Vanilla Turrets - Turret Extensions Patch (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2810491359)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of XeoNovaDans mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1516356320
@@ -15,9 +15,9 @@ The mod is compatible with:
 
 
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 # **Compatibility**
 
@@ -61,13 +61,13 @@ Most turrets also now show their accuracy stats just like the vanilla turrets do
 
 As is standard with my mods: you may include this mod in a mod pack, and you may derive from this, but please inform me if you're doing so through Ludeon Forums (preferably) or the Steam Comments Section, and give credit where credit's due.
 
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
@@ -75,4 +75,4 @@ As is standard with my mods: you may include this mod in a mod pack, and you may
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/MoreVanillaTurretsTurretExtensionsPatch?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2810491359) | tags:  turrets,  upgrades
+[![Image](https://img.shields.io/github/v/release/emipa606/MoreVanillaTurretsTurretExtensionsPatch?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2810491359) | turrets, upgrades
